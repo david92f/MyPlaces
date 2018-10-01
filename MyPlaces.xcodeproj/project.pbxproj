@@ -15,6 +15,8 @@
 		735A74F6215C0E570034976E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 735A74F4215C0E570034976E /* LaunchScreen.storyboard */; };
 		735A7501215C0E570034976E /* MyPlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A7500215C0E570034976E /* MyPlacesTests.swift */; };
 		735A750C215C0E570034976E /* MyPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A750B215C0E570034976E /* MyPlacesUITests.swift */; };
+		735A751A215C15780034976E /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A7519215C15780034976E /* DetailController.swift */; };
+		735A751D215C18480034976E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735A751C215C18480034976E /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		735A7507215C0E570034976E /* MyPlacesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPlacesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		735A750B215C0E570034976E /* MyPlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPlacesUITests.swift; sourceTree = "<group>"; };
 		735A750D215C0E570034976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		735A7519215C15780034976E /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		735A751C215C18480034976E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735A751D215C18480034976E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,7 @@
 				735A74FF215C0E570034976E /* MyPlacesTests */,
 				735A750A215C0E570034976E /* MyPlacesUITests */,
 				735A74E7215C0E560034976E /* Products */,
+				735A751B215C18480034976E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +109,7 @@
 				735A74EB215C0E560034976E /* FirstViewController.swift */,
 				735A74ED215C0E560034976E /* SecondViewController.swift */,
 				735A74EF215C0E560034976E /* Main.storyboard */,
+				735A7519215C15780034976E /* DetailController.swift */,
 				735A74F2215C0E570034976E /* Assets.xcassets */,
 				735A74F4215C0E570034976E /* LaunchScreen.storyboard */,
 				735A74F7215C0E570034976E /* Info.plist */,
@@ -126,6 +133,14 @@
 				735A750D215C0E570034976E /* Info.plist */,
 			);
 			path = MyPlacesUITests;
+			sourceTree = "<group>";
+		};
+		735A751B215C18480034976E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				735A751C215C18480034976E /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +211,11 @@
 				TargetAttributes = {
 					735A74E5215C0E560034976E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					735A74FB215C0E570034976E = {
 						CreatedOnToolsVersion = 10.0;
@@ -259,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				735A751A215C15780034976E /* DetailController.swift in Sources */,
 				735A74EE215C0E560034976E /* SecondViewController.swift in Sources */,
 				735A74EA215C0E560034976E /* AppDelegate.swift in Sources */,
 				735A74EC215C0E560034976E /* FirstViewController.swift in Sources */,
