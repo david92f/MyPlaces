@@ -50,8 +50,38 @@ class ManagerPlaces {
     }
     
     func remove(_ value:Place) {
-        places.remove(value)
         
+        var i : Int = 0
+        
+        for place in places {
+            if place.id.elementsEqual(value.id) {
+                i = places.firstIndex(where: <#T##(Place) throws -> Bool#>)
+            }
+            
+        }
+        
+        places.remove(at: i)
+        
+    }
+    
+    //******************************************
+    // Singleton
+    //
+    //  Unique instance for all App
+    //
+    
+    private static var sharedManagerPlaces: ManagerPlaces = {
+        
+        var singletonManager:ManagerPlaces
+        
+        singletonManager = ManagerPlaces()
+        
+        return singletonManager
+    }()
+    
+    
+    class func shared() -> ManagerPlaces {
+        return sharedManagerPlaces
     }
     
 }
