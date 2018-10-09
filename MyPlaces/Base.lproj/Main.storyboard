@@ -72,15 +72,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Places detail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTX-lR-wnU">
-                                <rect key="frame" x="166" y="323" width="97" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DVJ-7x-4DF">
+                                <rect key="frame" x="0.0" y="69" width="375" height="540"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="j9i-RU-60z">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="540"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Places detail" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uWG-MJ-bXj">
+                                                <rect key="frame" x="135" y="252" width="104" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="j9i-RU-60z" secondAttribute="trailing" id="3m0-JF-9cX"/>
+                                    <constraint firstItem="j9i-RU-60z" firstAttribute="top" secondItem="DVJ-7x-4DF" secondAttribute="top" id="4KW-bx-H6D"/>
+                                    <constraint firstItem="j9i-RU-60z" firstAttribute="leading" secondItem="DVJ-7x-4DF" secondAttribute="leading" id="GfM-Kc-PcZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="j9i-RU-60z" secondAttribute="bottom" id="Sj6-8e-luW"/>
+                                    <constraint firstItem="j9i-RU-60z" firstAttribute="width" secondItem="DVJ-7x-4DF" secondAttribute="width" id="ZjN-7a-5ns"/>
+                                    <constraint firstAttribute="bottom" secondItem="j9i-RU-60z" secondAttribute="bottom" id="chJ-9I-Kjd"/>
+                                    <constraint firstItem="j9i-RU-60z" firstAttribute="height" secondItem="DVJ-7x-4DF" secondAttribute="height" priority="250" id="kLi-f6-Nca"/>
+                                    <constraint firstItem="j9i-RU-60z" firstAttribute="leading" secondItem="DVJ-7x-4DF" secondAttribute="leading" id="nes-3V-mdo"/>
+                                    <constraint firstAttribute="trailing" secondItem="j9i-RU-60z" secondAttribute="trailing" id="u5e-2c-FjN"/>
+                                    <constraint firstItem="j9i-RU-60z" firstAttribute="top" secondItem="DVJ-7x-4DF" secondAttribute="top" id="xK2-dl-aIO"/>
+                                </constraints>
+                            </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-iO-ULu">
-                                <rect key="frame" x="195" y="352" width="39" height="30"/>
+                                <rect key="frame" x="320" y="617" width="39" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close"/>
                                 <connections>
@@ -89,12 +112,20 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f1q-29-iIc" firstAttribute="trailing" secondItem="DVJ-7x-4DF" secondAttribute="trailing" id="El8-mv-OyH"/>
+                            <constraint firstItem="DVJ-7x-4DF" firstAttribute="leading" secondItem="f1q-29-iIc" secondAttribute="leading" id="OJW-iz-yqi"/>
+                            <constraint firstItem="DVJ-7x-4DF" firstAttribute="top" secondItem="f1q-29-iIc" secondAttribute="top" id="idZ-4J-9Zt"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="f1q-29-iIc"/>
                     </view>
+                    <connections>
+                        <outlet property="constraintHeight" destination="kLi-f6-Nca" id="sAx-Zi-w09"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLr-11-IVs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1945" y="-1"/>
+            <point key="canvasLocation" x="1944.8" y="-1.3493253373313345"/>
         </scene>
         <!--Map-->
         <scene sceneID="3Qn-E0-ddQ">

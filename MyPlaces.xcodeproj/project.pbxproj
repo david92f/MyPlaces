@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		733CE032216296320081FF3B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 733CE031216296320081FF3B /* Place.swift */; };
 		735A74EA215C0E560034976E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A74E9215C0E560034976E /* AppDelegate.swift */; };
 		735A74EC215C0E560034976E /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A74EB215C0E560034976E /* FirstViewController.swift */; };
 		735A74EE215C0E560034976E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A74ED215C0E560034976E /* SecondViewController.swift */; };
@@ -17,6 +18,8 @@
 		735A750C215C0E570034976E /* MyPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A750B215C0E570034976E /* MyPlacesUITests.swift */; };
 		735A751A215C15780034976E /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 735A7519215C15780034976E /* DetailController.swift */; };
 		735A751D215C18480034976E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 735A751C215C18480034976E /* MapKit.framework */; };
+		739F38A6216D122100F127F3 /* PlaceTourist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F38A5216D122100F127F3 /* PlaceTourist.swift */; };
+		739F38A8216D139B00F127F3 /* ManagerPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 739F38A7216D139B00F127F3 /* ManagerPlaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		733CE031216296320081FF3B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
 		735A74E6215C0E560034976E /* MyPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		735A74E9215C0E560034976E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		735A74EB215C0E560034976E /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		735A750D215C0E570034976E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		735A7519215C15780034976E /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		735A751C215C18480034976E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		739F38A5216D122100F127F3 /* PlaceTourist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTourist.swift; sourceTree = "<group>"; };
+		739F38A7216D139B00F127F3 /* ManagerPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerPlaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +119,9 @@
 				735A74F2215C0E570034976E /* Assets.xcassets */,
 				735A74F4215C0E570034976E /* LaunchScreen.storyboard */,
 				735A74F7215C0E570034976E /* Info.plist */,
+				733CE031216296320081FF3B /* Place.swift */,
+				739F38A5216D122100F127F3 /* PlaceTourist.swift */,
+				739F38A7216D139B00F127F3 /* ManagerPlaces.swift */,
 			);
 			path = MyPlaces;
 			sourceTree = "<group>";
@@ -279,10 +288,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				739F38A6216D122100F127F3 /* PlaceTourist.swift in Sources */,
 				735A751A215C15780034976E /* DetailController.swift in Sources */,
 				735A74EE215C0E560034976E /* SecondViewController.swift in Sources */,
 				735A74EA215C0E560034976E /* AppDelegate.swift in Sources */,
 				735A74EC215C0E560034976E /* FirstViewController.swift in Sources */,
+				739F38A8216D139B00F127F3 /* ManagerPlaces.swift in Sources */,
+				733CE032216296320081FF3B /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
