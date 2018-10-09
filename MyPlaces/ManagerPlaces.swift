@@ -16,6 +16,8 @@ class ManagerPlaces {
         
     }
     
+    // ****************************************
+    
     // metodes
     
     func append(_ value:Place){
@@ -36,7 +38,7 @@ class ManagerPlaces {
     
     func GetItemById(id:String) -> Place {
         
-        var item : Place
+        var item = Place()
         
         // bucle per buscar si un id identic al donat previament
         for place in places {
@@ -50,14 +52,14 @@ class ManagerPlaces {
     }
     
     func remove(_ value:Place) {
+
+        var i = 0
         
-        var i : Int = 0
-        
-        for place in places {
-            if place.id.elementsEqual(value.id) {
-                i = places.firstIndex(where: <#T##(Place) throws -> Bool#>)
+        // bucle per poder extreure l'index on es troba l'element a borrar
+        for item in places {
+            if !item.id.elementsEqual(value.id){
+                i=i+1
             }
-            
         }
         
         places.remove(at: i)
