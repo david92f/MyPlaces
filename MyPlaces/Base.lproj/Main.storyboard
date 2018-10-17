@@ -68,20 +68,112 @@
         <scene sceneID="YWc-B7-1BK">
             <objects>
                 <viewController id="R5n-2B-XgO" customClass="DetailController" customModule="MyPlaces" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9U5-zD-wHD">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="9U5-zD-wHD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-iO-ULu">
-                                <rect key="frame" x="320" y="617" width="39" height="30"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFd-Qg-58x">
+                                <rect key="frame" x="0.0" y="544" width="375" height="123"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Q4-cI-DJC">
+                                        <rect key="frame" x="44" y="49" width="51" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Update"/>
+                                        <connections>
+                                            <action selector="Close:" destination="R5n-2B-XgO" eventType="touchDown" id="irh-oc-cWu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3f-Hz-3Ob">
+                                        <rect key="frame" x="160" y="49" width="55" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Remove"/>
+                                        <connections>
+                                            <action selector="Close:" destination="R5n-2B-XgO" eventType="touchDown" id="hMt-jI-Rhi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrE-iO-ULu">
+                                        <rect key="frame" x="275" y="49" width="39" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="Close:" destination="R5n-2B-XgO" eventType="touchDown" id="64L-Mi-Wha"/>
+                                        </connections>
+                                    </button>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WGM-pF-0WX">
+                                        <rect key="frame" x="21" y="193" width="96" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hFd-Qg-58x" secondAttribute="height" multiplier="375:622" id="zbP-HV-iDa"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" text="Generic place" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Zcq-O5-JZo">
+                                <rect key="frame" x="67" y="34" width="240" height="35"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Touristic place" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-Rm-y74">
+                                <rect key="frame" x="67" y="77" width="240" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Close"/>
-                                <connections>
-                                    <action selector="Close:" destination="R5n-2B-XgO" eventType="touchDown" id="64L-Mi-Wha"/>
-                                </connections>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIY-A9-ihE">
+                                <rect key="frame" x="128" y="138" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Name" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-6U-XQA">
+                                <rect key="frame" x="16" y="138" width="96" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Image" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="r65-m8-4mB">
+                                <rect key="frame" x="16" y="206" width="96" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NJC-FT-4c1">
+                                <rect key="frame" x="109" y="261" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bAF-Rf-39R">
+                                <rect key="frame" x="263" y="208" width="89" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select Image"/>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Notes" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cGq-ma-LQf">
+                                <rect key="frame" x="16" y="415" width="96" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="f1q-29-iIc" firstAttribute="bottom" secondItem="hFd-Qg-58x" secondAttribute="bottom" id="FtO-ao-hoZ"/>
+                            <constraint firstItem="hFd-Qg-58x" firstAttribute="bottom" secondItem="f1q-29-iIc" secondAttribute="bottom" id="IhC-hd-Zdm"/>
+                            <constraint firstItem="hFd-Qg-58x" firstAttribute="leading" secondItem="f1q-29-iIc" secondAttribute="leading" id="R90-Yc-xmq"/>
+                            <constraint firstItem="hFd-Qg-58x" firstAttribute="leading" secondItem="f1q-29-iIc" secondAttribute="leading" id="Xpw-ah-5rh"/>
+                            <constraint firstItem="hFd-Qg-58x" firstAttribute="trailing" secondItem="f1q-29-iIc" secondAttribute="trailing" id="jYY-l6-0d7"/>
+                            <constraint firstItem="hFd-Qg-58x" firstAttribute="top" secondItem="f1q-29-iIc" secondAttribute="top" id="ueh-If-eZE"/>
+                            <constraint firstItem="Zcq-O5-JZo" firstAttribute="centerX" secondItem="9U5-zD-wHD" secondAttribute="centerX" id="xaf-ao-f6Q"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="f1q-29-iIc"/>
                     </view>
                 </viewController>
@@ -128,11 +220,7 @@
                         <viewLayoutGuide key="safeArea" id="Ovb-7y-tjA"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Places" id="fAc-dI-zaW">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rPm-1W-saT">
-                            <connections>
-                                <segue destination="R5n-2B-XgO" kind="showDetail" id="ofn-ur-TkA"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rPm-1W-saT"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="faV-XZ-uJK" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -161,7 +249,4 @@
         <image name="first" width="30" height="30"/>
         <image name="second" width="30" height="30"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="ofn-ur-TkA"/>
-    </inferredMetricsTieBreakers>
 </document>

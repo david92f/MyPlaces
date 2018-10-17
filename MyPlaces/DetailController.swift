@@ -10,7 +10,7 @@ import UIKit
 
 class DetailController: UIViewController {
 
-    @IBOutlet weak var 	constraintHeight: NSLayoutConstraint!
+    @IBOutlet weak var	constraintHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
